@@ -1,0 +1,278 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+    color: white;
+    box-sizing: border-box;
+    letter-spacing: 1.5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url("../images/space.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Kanit', sans-serif;
+}
+
+div,
+h3 {
+    text-align: center;
+}
+
+img {
+    max-width: 90%;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+p {
+    margin-bottom: 1.8em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+.container {
+    padding-left: 0.15em;
+    padding-right: 0.15em;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.name {
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+}
+
+.name,
+nav,
+.intro,
+.name a,
+nav a {
+    text-align: center;
+}
+
+nav,
+#skills {
+    width: 90%;
+    text-align: center;
+}
+
+.name a,
+nav a {
+    display: block;  
+}
+
+.intro img {
+    margin-top: 3em;
+    width: 50%;
+}
+
+nav a,
+#portfolio h3,
+.back-top,
+.bottom-nav {
+    text-transform: uppercase;
+}
+
+nav a {
+    background-color: white;
+    color: #535353;
+    font-weight: bold;
+    margin-left: 2em;
+    margin-top: .25em;
+    padding: 15px 15px;
+}
+
+.intro p {
+    font-size: 1.4em;
+    color: rgb(141, 140, 140);
+}
+
+#portfolio {
+    padding-bottom: 1.5em;
+    width:100%;
+}
+#portfolio h3 {
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+
+#skills h3 {
+    text-transform: uppercase;
+}
+#skills a {
+    color: #535353;
+    background-color: white;
+    display: block;
+    margin-top: 0.25em;
+    padding: 0.75em 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+.bottom-nav {
+    display: none;
+}
+
+.back-top {
+    float: right;
+}
+.back-top,
+#botname {
+    margin-bottom: 1em;
+}
+.back-top a,
+.main-footer span {
+    font-size: 0.75em;
+    font-weight: bolder;
+}
+.main-footer span {
+    margin-left: 1em;
+}
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    .back-top {
+        display: none;
+    }
+    .bottom-nav {
+        display: block;
+        float: right;
+    }
+    .bottom-nav li {
+        display: inline-block;
+        margin-left: 1em;
+    }
+    .name {
+        margin-bottom: 0.05em;
+    }
+
+    nav {
+        width: 100%;
+    }
+    nav a {
+        display: inline-block;
+        margin-left: unset;
+    }
+
+    #portfolio div {
+        display: inline-block;
+        margin: 0 .5em 0 .5em;
+        max-width: 43%;
+    }
+    #portfolio img {
+        max-width: 100%;
+    }
+    #skills a {
+        display: inline-block;
+        width: 45%;
+    }
+
+    .intro img {
+        float: right;
+        height: 10em;
+        margin-top: unset;
+        width: unset;
+    }
+    .intro p {
+        text-align: left;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .name {
+        float: left;
+        margin-left: .85em;
+    }
+
+    nav {
+        float: right;
+        position: absolute;
+        right: 1em;
+        top: 2em;
+        width: 38%;
+    }
+    nav a {
+        background: none;
+        color: white;
+        float: left;
+        font-size: 0.85em;
+        margin-left: unset;
+        width: 25%;
+    }
+
+
+    .intro {
+        margin-top: 1em;
+        text-align: right;
+    }
+    .intro p {
+        position: absolute;
+        text-align: left;
+        top: 6em;
+        width: 60%;
+    }
+
+    .intro img {
+        float: right;
+        top: 3em;
+        width: 30%;
+    }
+
+    #portfolio img {
+        max-width:100%;
+        margin-left: unset;
+    }
+
+    #portfolio div {
+        display: inline-block;
+        margin: 0 .5em 0 .5em;
+        width: 31%;
+    }
+
+    #skills a {
+        display: inline-block;
+        width: 49%;
+    }
+
+    .back-top {
+        display: none;
+    }
+    .bottom-nav {
+        display: block;
+        float: right;
+    }
+    .bottom-nav li {
+        display: inline-block;
+        margin-left: 1em;
+    }
+
+    #contact {
+        width: 60%;
+    }
+
+}
